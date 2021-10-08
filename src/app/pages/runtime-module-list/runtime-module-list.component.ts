@@ -75,6 +75,7 @@ export class RuntimeModuleListComponent implements OnInit, OnDestroy {
     };
 
     this.runtimeModuleService.all(params).subscribe(modules => {
+      console.log("!!!!!!!!!!!!!modules: ", modules);
       this.modules = modules;
     });
   }
